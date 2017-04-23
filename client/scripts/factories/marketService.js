@@ -19,16 +19,24 @@ myApp.factory('MarketService', ['$interval', function($interval){
         }
         figureAvg (item.quantity);
       }
+    player1.cash = player1.cash - price;
 
     }
 
-  function sellItem (object){
+  function sellItem (object, array = inventoryArray){
     let { name } = object;
+    let price;
       for (item of player1.cart){
         if (name===item.name){
           item.quantity.pop();
         }
       }
+      for (item of array){
+        if (name === item.name){
+          price = item.price;
+        }
+      }
+    player1.cash = player1.cash + price;
   }
 
     function figureAvg (array) {

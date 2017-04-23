@@ -139,11 +139,12 @@ Make it so the collectibles only increase in price, but can only increase in int
   - [x] Set interval function
 
 * Version .3
- - [ ] Buy items
- - [ ] Average Price
- - [ ] Sell items
+ - [x] Buy items
+ - [x] Average Price
+ - [x] Sell items
 
 * Version .4
+  - [ ] Reduce and Add cash when buying and selling
   - [ ] Apply Bootstrap and css
   - [ ] Images for items
 

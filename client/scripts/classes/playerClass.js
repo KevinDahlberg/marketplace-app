@@ -1,5 +1,5 @@
 class Player {
-  constructor(name, items, cart, cash = STARTING_CASH){
+  constructor(name, items, cart, cash = STARTING_CASH/100){
     this.name = name;
     this.items = items;
     this.cart = [];
