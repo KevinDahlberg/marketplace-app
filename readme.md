@@ -70,6 +70,8 @@ Make it so that fruit can has a swing not of negative fifty cents to positive fi
 >Pro Mode
 Make it so the collectibles only increase in price, but can only increase in intervals between positive ten cents and thirty cents.
 
+---
+
 ### Tasks
 1. name and market price of each item displays to DOM
 2. price fluctuates
@@ -88,6 +90,7 @@ Make it so the collectibles only increase in price, but can only increase in int
   * Fruits - Apples, Oranges, Bananas, and Grapes
   * Collectables - Comic Books, Fancy Stuffed Animals, Jewelry, and Wine
 
+---
 * DOM
   * Marketplace
     - [ ] display marketplace items
