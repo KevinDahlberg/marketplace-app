@@ -88,3 +88,5 @@ trying to figure out where I end up with crazy decimals.
 couldn't figure that out yet.  I did get the averageing and the selling functionality to work though.
 
 able to add and subtract from the total cash
+
+** 3:20 done for the night **

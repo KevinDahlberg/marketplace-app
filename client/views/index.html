@@ -40,7 +40,6 @@
   <div ng-controller = "PlayerController as player">
     <p>Welcome {{player.player1.name}}!</p>
     <p>Total Cash: {{player.player1.cash}}</p>
-    <p>{{player.player1}}</p>
     <p>Cart:</p>
         <div ng-repeat="item in player.player1.cart">
         <div ng-click="player.sellItem(item)"

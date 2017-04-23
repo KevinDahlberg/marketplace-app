@@ -144,7 +144,7 @@ Make it so the collectibles only increase in price, but can only increase in int
  - [x] Sell items
 
 * Version .4
-  - [ ] Reduce and Add cash when buying and selling
+  - [x] Reduce and Add cash when buying and selling
   - [ ] Apply Bootstrap and css
   - [ ] Images for items
 
