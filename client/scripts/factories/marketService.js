@@ -13,21 +13,12 @@ myApp.factory('MarketService', ['$interval', function($interval){
   //applies the setInterval function in angular.  cycles through the inventoryArray and
   //generates a new random number based on the swing.  if the number goes above or below
   //a new number is generated.
-  let updateNumber = $interval(function(){
+  let updateNumber = $interval(() => {
     for (item of inventoryArray){
-      let posNeg = Math.random()*2;
-      if (posNeg > 1) {
-        item.price = item.price + (Utilities.randomNumber(MIN_PRICE_SWING, MAX_PRICE_SWING)/100);
-      } else if (posNeg < 1) {
-        item.price = item.price - (Utilities.randomNumber(MIN_PRICE_SWING, MAX_PRICE_SWING)/100);
-      }
+      item.newPrice();
 
       //makes sure the price does not go above or below the max and min prices
-      if (item.price > (MAX_PRICE/100)) {
-        item.price = Utilities.startingNumber(MIN_PRICE, MAX_PRICE);
-      } else if (item.price < (MIN_PRICE/100)) {
-        item.price = Utilities.startingNumber(MIN_PRICE, MAX_PRICE);
-      }
+      item.priceConstraint();
 
     }
   }, PRICE_CHANGE_TIME);

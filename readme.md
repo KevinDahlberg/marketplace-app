@@ -135,7 +135,7 @@ Make it so the collectibles only increase in price, but can only increase in int
 
 * Version .2
   - [ ] Create Classes
-  - [ ] Random Number function
+  - [x] Random Number function
   - [ ] Set interval function
 
 * Version .3
