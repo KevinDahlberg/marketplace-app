@@ -91,6 +91,7 @@ Make it so the collectibles only increase in price, but can only increase in int
   * Collectables - Comic Books, Fancy Stuffed Animals, Jewelry, and Wine
 
 ---
+
 * DOM
   * Marketplace
     - [ ] display marketplace items
@@ -128,7 +129,7 @@ Make it so the collectibles only increase in price, but can only increase in int
   - [ ] Total cash for the player
 
 * MVP - .1
-  - [ ] Create Array of items
+  - [x] Create Array of items
   - [ ] Create player
   - [ ] Display Array of items and player to DOM
 

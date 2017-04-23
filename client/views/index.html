@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-App="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Marketplace App</title>
+
+    <!-- stylesheete -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <!-- angular -->
+    <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="vendors/angular-route/angular-route.min.js"></script>
+
+    <!-- config files -->
+    <script type="text/javascript" src="scripts/config/inventory.js"></script>
+    <script type="text/javascript" src="scripts/config/constants.js"></script>
+
+    <!-- client -->
+    <script type="text/javascript" src="scripts/client.js"></script>
+
+    <!-- classes -->
+
+    <!-- factories -->
+    <script type="text/javascript" src="scripts/factories/marketService.js"></script>
+
+    <!-- controllers -->
+    <script type="text/javascript" src="scripts/controllers/marketController.js"></script>
+
+
+  </head>
+
+  <body>
+  <h1>Marketplace App</h1>
+
+  <div ng-controller="MarketController as market">
+    <div ng-repeat="item in market.inventoryArray">
+      <p>Name: {{item.item}}</p>
+      <p>Type: {{item.type}}</p>
+  </div>
+  </body>
+</html>
