@@ -1,0 +1,30 @@
+{
+  "name": "marketplace-app",
+  "version": "1.0.0",
+  "description": "marketplace app",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "mongoose": "^4.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinDahlberg/marketplace-app.git"
+  },
+  "author": "Kevin Dahlberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinDahlberg/marketplace-app/issues"
+  },
+  "homepage": "https://github.com/KevinDahlberg/marketplace-app#readme"
+}
