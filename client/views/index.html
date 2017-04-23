@@ -40,13 +40,22 @@
   <div ng-controller = "PlayerController as player">
     <p>Welcome {{player.player1.name}}!</p>
     <p>Total Cash: {{player.player1.cash}}</p>
+    <p>{{player.player1}}</p>
+    <p>Cart:</p>
+        <div ng-repeat="item in player.player1.cart">
+        <p>Item: {{item.name}}</p>
+        <p>Quantity: {{item.quantity.length}}</p>
   </div>
 
+
   <div ng-controller="MarketController as market">
+    <h3>Market</h3>
     <div ng-repeat="item in market.inventoryArray">
+      <div ng-click="market.buyItem(item)">
       <p>Name: {{item.name}}</p>
       <p>Type: {{item.type}}</p>
       <p>Price: {{item.price}}</p>
+    </div>
   </div>
   </body>
 </html>

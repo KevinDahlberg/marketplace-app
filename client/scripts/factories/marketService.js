@@ -1,6 +1,7 @@
 myApp.factory('MarketService', ['$interval', function($interval){
   console.log('Factory sourced');
   inventoryArray = [];
+  cartArray = [];
 
   for (item of INVENTORY) {
     let price = Utilities.startingNumber(MIN_PRICE, MAX_PRICE);
@@ -8,7 +9,17 @@ myApp.factory('MarketService', ['$interval', function($interval){
     inventoryArray.push(newItem);
   }
 
+
   let player1 = new Player ('Player 1', inventoryArray);
+
+  function buyItem (object){
+    let { name, price } = object;
+      for (item of player1.cart){
+        if (name===item.name){
+        item.quantity.push(price);
+        }
+      }
+    }
 
   //applies the setInterval function in angular.  cycles through the inventoryArray and
   //generates a new random number based on the swing.  if the number goes above or below
@@ -16,10 +27,8 @@ myApp.factory('MarketService', ['$interval', function($interval){
   let updateNumber = $interval(() => {
     for (item of inventoryArray){
       item.newPrice();
-
       //makes sure the price does not go above or below the max and min prices
       item.priceConstraint();
-
     }
   }, PRICE_CHANGE_TIME);
 
@@ -27,6 +36,8 @@ myApp.factory('MarketService', ['$interval', function($interval){
   return {
     updateNumber,
     inventoryArray,
-    player1
+    player1,
+    buyItem,
+    cartArray
   }
 }]);

@@ -134,9 +134,9 @@ Make it so the collectibles only increase in price, but can only increase in int
   - [x] Display Array of items and player to DOM
 
 * Version .2
-  - [ ] Create Classes
+  - [x] Create Classes
   - [x] Random Number function
-  - [ ] Set interval function
+  - [x] Set interval function
 
 * Version .3
  - [ ] Buy items

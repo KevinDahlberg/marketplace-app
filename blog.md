@@ -65,3 +65,18 @@ Created a utilities class that has 2 static methods - 1 for the starting number,
 next up is creating using the $interval utility to have a 15 second timer
 
 got the interval to work, with an if statement in there just in case the number ever goes above or below the constraints
+
+moved the price change functionality from the factory to the market class.
+
+- next up is setting up buying items, reducing the cash when bought, and figuring out average cost
+
+items are now getting added to a "cart".  I need to put a version of the inventory on the player side as well.
+Then make it so when an object is clicked, it gets added to an array of that object.
+
+set it up so that each item on the Player side has a quantity array in it.  when
+an item is clicked, the quantity array for the corresponding item in the player array
+gets an item of that price added to it.  
+
+changed "quantity" so that it only counts the length of the array, not the actual items in it on the DOM
+
+** 2:11 taking a break **
