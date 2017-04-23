@@ -18,7 +18,19 @@ myApp.factory('MarketService', ['$interval', function($interval){
         if (name===item.name){
         item.quantity.push(price);
         }
+        figureAvg (item.quantity);
       }
+
+    }
+
+    function figureAvg (array) {
+      let num = array.length;
+      let num2 = 0;
+      for (let item of array){
+        num2 = parseFloat(item) + num2;
+      }
+      let average = num2/num;
+      array.fill(average);
     }
 
   //applies the setInterval function in angular.  cycles through the inventoryArray and
@@ -38,6 +50,7 @@ myApp.factory('MarketService', ['$interval', function($interval){
     inventoryArray,
     player1,
     buyItem,
-    cartArray
+    cartArray,
+    figureAvg
   }
 }]);

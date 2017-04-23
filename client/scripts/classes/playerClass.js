@@ -13,8 +13,12 @@ class Player {
         name : item.name,
         quantity : [],
       };
+
       this.cart.push(item);
+
     }
 
   }
+
+
 }

@@ -10,9 +10,9 @@ class MarketItem {
    newPrice (){
     let posNeg = Math.random()*2;
     if (posNeg > 1) {
-      item.price = item.price + (Utilities.randomNumber(MIN_PRICE_SWING, MAX_PRICE_SWING)/100);
+      item.price = item.price + (Utilities.randomNumber(MIN_PRICE_SWING, MAX_PRICE_SWING));
     } else if (posNeg < 1) {
-      item.price = item.price - (Utilities.randomNumber(MIN_PRICE_SWING, MAX_PRICE_SWING)/100);
+      item.price = item.price - (Utilities.randomNumber(MIN_PRICE_SWING, MAX_PRICE_SWING));
     }
   }
 

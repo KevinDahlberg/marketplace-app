@@ -80,3 +80,7 @@ gets an item of that price added to it.
 changed "quantity" so that it only counts the length of the array, not the actual items in it on the DOM
 
 ** 2:11 taking a break **
+
+** 2:30 back at it **
+
+trying to figure out where I end up with crazy decimals.
