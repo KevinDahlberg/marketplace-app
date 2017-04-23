@@ -39,3 +39,11 @@ my factory, and then if I choose to I can abstract it out into a different class
 had a problem with grunt not seeing changes to all of my files.  I had to add another condition to
 the grunt watch.  Grunt is pretty frustrating, but it's one of those things that I know I need
 practice on before ending up in the real world.
+
+* Player class is created, player 1 generated in the factory.  Displays on the DOM.
+
+- create market class and put market into their respective classes (based on type)
+- I will eventually have to put images in the inventory.js file as a third property
+
+MarketItem class is created.  I need to be able to pass an array (when I create the instance of it,
+  it will be INVENTORY) into it.  So just like player1, market1 will be an instance of a Market Item.

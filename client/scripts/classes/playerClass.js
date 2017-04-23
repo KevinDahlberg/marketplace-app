@@ -1,7 +1,7 @@
 class Player {
-  constructor(name, startingCash, items){
+  constructor(name, cash = STARTING_CASH, items){
     this.name = name;
-    this.startingCash = STARTING_CASH;
+    this.cash = cash;
     this.items = items;
   }
 }

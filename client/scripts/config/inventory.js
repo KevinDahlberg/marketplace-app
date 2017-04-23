@@ -2,50 +2,62 @@
 const INVENTORY = [
   {
     item : 'Toaster',
-    type: 'smallElectronics'
+    type: 'smallElectronics',
+    image: ''
   },
   {
     item : 'Lamp',
-    type: 'smallElectronics'
+    type: 'smallElectronics',
+    image: ''
   },
   {
     item : 'Clock',
-    type: 'smallElectronics'
+    type: 'smallElectronics',
+    image: ''
   },
   {
     item : 'Bluray Player',
-    type: 'smallElectronics'
+    type: 'smallElectronics',
+    image: ''
   },
   {
     item : 'Apples',
-    type : 'fruit'
+    type : 'fruit',
+    image: ''
   },
   {
-    item : 'Oranges',
-    type : 'fruit'
+    name : 'Oranges',
+    type : 'fruit',
+    image: ''
   },
   {
-    item : 'Bananas',
-    type : 'fruit'
+    name : 'Bananas',
+    type : 'fruit',
+    image: ''
   },
   {
-    item : 'Grapes',
-    type : 'fruit'
+    name : 'Grapes',
+    type : 'fruit',
+    image: ''
   },
   {
-    item : 'Comic Books',
-    type : 'collectables'
+    name : 'Comic Books',
+    type : 'collectables',
+    image: ''
   },
   {
-    item : 'Fancy Stuffed Animal',
-    type : 'collectables'
+    name : 'Fancy Stuffed Animal',
+    type : 'collectables',
+    image: ''
   },
   {
-    item : 'Jewelry',
-    type : 'collectables'
+    name : 'Jewelry',
+    type : 'collectables',
+    image: ''
   },
   {
-    item : 'Wine',
-    type : 'collectables'
+    name : 'Wine',
+    type : 'collectables',
+    image: ''
   }
 ];
