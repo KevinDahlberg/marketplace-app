@@ -43,9 +43,11 @@
     <p>{{player.player1}}</p>
     <p>Cart:</p>
         <div ng-repeat="item in player.player1.cart">
+        <div ng-click="player.sellItem(item)"
         <p>Item: {{item.name}}</p>
         <p>Quantity: {{item.quantity.length}}</p>
-        <p>Average: {{item.quantity}}</p>
+        <p>Average: {{item.quantity[0]}}</p>
+      </div>
   </div>
 
 

@@ -1,7 +1,6 @@
 myApp.factory('MarketService', ['$interval', function($interval){
   console.log('Factory sourced');
   inventoryArray = [];
-  cartArray = [];
 
   for (item of INVENTORY) {
     let price = Utilities.startingNumber(MIN_PRICE, MAX_PRICE);
@@ -22,6 +21,15 @@ myApp.factory('MarketService', ['$interval', function($interval){
       }
 
     }
+
+  function sellItem (object){
+    let { name } = object;
+      for (item of player1.cart){
+        if (name===item.name){
+          item.quantity.pop();
+        }
+      }
+  }
 
     function figureAvg (array) {
       let num = array.length;
@@ -50,7 +58,6 @@ myApp.factory('MarketService', ['$interval', function($interval){
     inventoryArray,
     player1,
     buyItem,
-    cartArray,
-    figureAvg
+    sellItem
   }
 }]);
