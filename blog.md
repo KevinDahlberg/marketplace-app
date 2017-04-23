@@ -47,3 +47,11 @@ practice on before ending up in the real world.
 
 MarketItem class is created.  I need to be able to pass an array (when I create the instance of it,
   it will be INVENTORY) into it.  So just like player1, market1 will be an instance of a Market Item.
+
+stuff to think about:
+- I need to get the initial price figured out and displayed (i think it would be cool for it to be
+  a random number between the swing)
+- I need to get the price on each item to swing on the interval.
+- I need to create all of my new item objects in the factory and push them to the array.
+
+** Break for Supper at 10:55 **
