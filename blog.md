@@ -59,3 +59,9 @@ stuff to think about:
 ** 11:58 back at it **
 
 Created a utilities class that has 2 static methods - 1 for the starting number, the other for the random number.
+
+* created for loop in the factory that creates an array of items with a random starting number between the starting min and max
+
+next up is creating using the $interval utility to have a 15 second timer
+
+got the interval to work, with an if statement in there just in case the number ever goes above or below the constraints

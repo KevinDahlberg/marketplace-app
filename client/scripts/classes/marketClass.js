@@ -5,6 +5,8 @@ class MarketItem {
     this.image = image;
     this.price = price;
     this.type = type;
+
+  
   }
 
 }
