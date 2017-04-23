@@ -1,20 +1,20 @@
-console.log('inventory sourced');
-let inventory = [
+
+const INVENTORY = [
   {
     item : 'Toaster',
-    type: 'smElectronics'
+    type: 'smallElectronics'
   },
   {
     item : 'Lamp',
-    type: 'smElectronics'
+    type: 'smallElectronics'
   },
   {
     item : 'Clock',
-    type: 'smElectronics'
+    type: 'smallElectronics'
   },
   {
     item : 'Bluray Player',
-    type: 'smElectronics'
+    type: 'smallElectronics'
   },
   {
     item : 'Apples',

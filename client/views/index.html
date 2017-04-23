@@ -20,18 +20,25 @@
     <script type="text/javascript" src="scripts/client.js"></script>
 
     <!-- classes -->
+    <script type="text/javascript" src="scripts/classes/playerClass.js"></script>
 
     <!-- factories -->
     <script type="text/javascript" src="scripts/factories/marketService.js"></script>
 
     <!-- controllers -->
     <script type="text/javascript" src="scripts/controllers/marketController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/playerController.js"></script>
 
 
   </head>
 
   <body>
   <h1>Marketplace App</h1>
+
+  <div ng-controller = "PlayerController as player">
+    <p>Welcome {{player.player1.name}}!</p>
+    <p>Total Cash: {{player.player1.startingCash}}</p>
+  </div>
 
   <div ng-controller="MarketController as market">
     <div ng-repeat="item in market.inventoryArray">

@@ -130,8 +130,8 @@ Make it so the collectibles only increase in price, but can only increase in int
 
 * MVP - .1
   - [x] Create Array of items
-  - [ ] Create player
-  - [ ] Display Array of items and player to DOM
+  - [x] Create player
+  - [x] Display Array of items and player to DOM
 
 * Version .2
   - [ ] Create Classes
