@@ -4,7 +4,7 @@ class MarketItem {
     this.name = name;
     this.image = image;
     this.price = price;
-    this.type = type
+    this.type = type;
   }
 
 }

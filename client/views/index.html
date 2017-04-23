@@ -20,6 +20,8 @@
     <script type="text/javascript" src="scripts/client.js"></script>
 
     <!-- classes -->
+    <script type="text/javascript" src="scripts/classes/utilities.js"></script>
+    <script type="text/javascript" src="scripts/classes/marketClass.js"></script>
     <script type="text/javascript" src="scripts/classes/playerClass.js"></script>
 
     <!-- factories -->
@@ -42,8 +44,9 @@
 
   <div ng-controller="MarketController as market">
     <div ng-repeat="item in market.inventoryArray">
-      <p>Name: {{item.item}}</p>
+      <p>Name: {{item.name}}</p>
       <p>Type: {{item.type}}</p>
+      <p>Price: {{item.price}}</p>
   </div>
   </body>
 </html>

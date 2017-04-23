@@ -55,3 +55,7 @@ stuff to think about:
 - I need to create all of my new item objects in the factory and push them to the array.
 
 ** Break for Supper at 10:55 **
+
+** 11:58 back at it **
+
+Created a utilities class that has 2 static methods - 1 for the starting number, the other for the random number.

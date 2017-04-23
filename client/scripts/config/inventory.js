@@ -1,27 +1,27 @@
 
 const INVENTORY = [
   {
-    item : 'Toaster',
+    name : 'Toaster',
     type: 'smallElectronics',
     image: ''
   },
   {
-    item : 'Lamp',
+    name : 'Lamp',
     type: 'smallElectronics',
     image: ''
   },
   {
-    item : 'Clock',
+    name : 'Clock',
     type: 'smallElectronics',
     image: ''
   },
   {
-    item : 'Bluray Player',
+    name : 'Bluray Player',
     type: 'smallElectronics',
     image: ''
   },
   {
-    item : 'Apples',
+    name : 'Apples',
     type : 'fruit',
     image: ''
   },
