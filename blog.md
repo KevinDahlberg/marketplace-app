@@ -90,3 +90,16 @@ couldn't figure that out yet.  I did get the averageing and the selling function
 able to add and subtract from the total cash
 
 ** 3:20 done for the night **
+
+## 4/23/2017
+
+** coded for about an hour.
+
+added images, did some styling and fixed the bug that let you sell an item even
+if there wasn't any quantity of that item.
+
+it was hard to face the styling.  I kept wishing that I could code some more.
+This seems to be when each project runs out of steam - when I have to style.
+The hard part is that the styling part can be as challenging as the actual logic,
+I think it's just because the styling is my weakest area, that I'm having problems
+with it.  Much as I hate to admit it, I need styling to become one of my strengths.
