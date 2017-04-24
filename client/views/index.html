@@ -1,63 +1,83 @@
 <!DOCTYPE html>
 <html ng-App="myApp">
-  <head>
-    <meta charset="utf-8">
-    <title>Marketplace App</title>
+<head>
+  <meta charset="utf-8">
+  <title>Marketplace App</title>
 
-    <!-- stylesheete -->
-    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/styles/style.css">
+  <!-- stylesheete -->
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/styles/style.css">
 
-    <!-- angular -->
-    <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
-    <script type="text/javascript" src="vendors/angular-route/angular-route.min.js"></script>
+  <!-- angular -->
+  <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+  <script type="text/javascript" src="vendors/angular-route/angular-route.min.js"></script>
 
-    <!-- config files -->
-    <script type="text/javascript" src="scripts/config/inventory.js"></script>
-    <script type="text/javascript" src="scripts/config/constants.js"></script>
+  <!-- config files -->
+  <script type="text/javascript" src="scripts/config/inventory.js"></script>
+  <script type="text/javascript" src="scripts/config/constants.js"></script>
 
-    <!-- client -->
-    <script type="text/javascript" src="scripts/client.js"></script>
+  <!-- client -->
+  <script type="text/javascript" src="scripts/client.js"></script>
 
-    <!-- classes -->
-    <script type="text/javascript" src="scripts/classes/utilities.js"></script>
-    <script type="text/javascript" src="scripts/classes/marketClass.js"></script>
-    <script type="text/javascript" src="scripts/classes/playerClass.js"></script>
+  <!-- classes -->
+  <script type="text/javascript" src="scripts/classes/utilities.js"></script>
+  <script type="text/javascript" src="scripts/classes/marketClass.js"></script>
+  <script type="text/javascript" src="scripts/classes/playerClass.js"></script>
 
-    <!-- factories -->
-    <script type="text/javascript" src="scripts/factories/marketService.js"></script>
+  <!-- factories -->
+  <script type="text/javascript" src="scripts/factories/marketService.js"></script>
 
-    <!-- controllers -->
-    <script type="text/javascript" src="scripts/controllers/marketController.js"></script>
-    <script type="text/javascript" src="scripts/controllers/playerController.js"></script>
+  <!-- controllers -->
+  <script type="text/javascript" src="scripts/controllers/marketController.js"></script>
+  <script type="text/javascript" src="scripts/controllers/playerController.js"></script>
 
 
-  </head>
+</head>
 
-  <body>
-  <h1>Marketplace App</h1>
-
-  <div ng-controller = "PlayerController as player">
-    <p>Welcome {{player.player1.name}}!</p>
-    <p>Total Cash: {{player.player1.cash}}</p>
-    <p>Cart:</p>
-        <div ng-repeat="item in player.player1.cart">
-        <div ng-click="player.sellItem(item)"
-        <p>Item: {{item.name}}</p>
-        <p>Quantity: {{item.quantity.length}}</p>
-        <p>Average: {{item.quantity[0]}}</p>
+<body>
+  <div class="container-fluid centered">
+    <h1>Marketplace App</h1>
+    <div class="row">
+      <div class="col-md-12 playerContainer">
+        <div ng-controller = "PlayerController as player">
+          <p>Welcome {{player.player1.name}}!</p>
+          <p>Total Cash: {{player.player1.cash | currency : "$"}}</p>
+          <div class = "row">
+            <p>Cart:</p>
+            <div ng-repeat="item in player.player1.cart">
+              <div class="col-md-1 personItem" ng-click="player.sellItem(item)">
+                <p>{{item.name}}</p>
+                <p>Quantity: {{item.quantity.length}}</p>
+                <p>Average: {{item.quantity[0] | currency : "$"}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-
-
-  <div ng-controller="MarketController as market">
-    <h3>Market</h3>
-    <div ng-repeat="item in market.inventoryArray">
-      <div ng-click="market.buyItem(item)">
-      <p>Name: {{item.name}}</p>
-      <p>Type: {{item.type}}</p>
-      <p>Price: {{item.price}}</p>
     </div>
-  </div>
+
+    <div class="row">
+      <div class="col-md-12 centered">
+        <h3>Market</h3>
+      </div>
+    </div>
+    <div ng-controller="MarketController as market">
+      <div class="row">
+        <div class="col-md-12">
+        <div ng-repeat="item in market.inventoryArray">
+          <div class="col-sm-3 centered">
+            <div class = "itemContainer centered">
+            <div class="marketItem" ng-click="market.buyItem(item)">
+              <img ng-src="{{item.image}}" alt="image of {{item.name}}">
+              <p>Name: {{item.name}}</p>
+              <p>Type: {{item.type}}</p>
+              <p>Price: {{item.price | currency : "$"}}</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
   </body>
-</html>
+  </html>

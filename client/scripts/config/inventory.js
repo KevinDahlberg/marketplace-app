@@ -3,61 +3,61 @@ const INVENTORY = [
   {
     name : 'Toaster',
     type: 'smallElectronics',
-    image: ''
+    image: 'images/toaster.png'
   },
   {
     name : 'Lamp',
     type: 'smallElectronics',
-    image: ''
+    image: 'images/lamp.png'
   },
   {
     name : 'Clock',
     type: 'smallElectronics',
-    image: ''
+    image: 'images/clock.png'
   },
   {
     name : 'Bluray Player',
     type: 'smallElectronics',
-    image: ''
+    image: 'images/bluray.png'
   },
   {
     name : 'Apples',
     type : 'fruit',
-    image: ''
+    image: 'images/apple.png'
   },
   {
     name : 'Oranges',
     type : 'fruit',
-    image: ''
+    image: 'images/orange.png'
   },
   {
     name : 'Bananas',
     type : 'fruit',
-    image: ''
+    image: 'images/banana.png'
   },
   {
     name : 'Grapes',
     type : 'fruit',
-    image: ''
+    image: 'images/grapes.png'
   },
   {
     name : 'Comic Books',
     type : 'collectables',
-    image: ''
+    image: 'images/comics.jpg'
   },
   {
     name : 'Fancy Stuffed Animal',
     type : 'collectables',
-    image: ''
+    image: 'images/stuffed.png'
   },
   {
     name : 'Jewelry',
     type : 'collectables',
-    image: ''
+    image: 'images/jewelry.png'
   },
   {
     name : 'Wine',
     type : 'collectables',
-    image: ''
+    image: 'images/wine.png'
   }
 ];

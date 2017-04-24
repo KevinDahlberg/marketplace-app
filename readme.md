@@ -65,7 +65,7 @@ Bootstrap
 >ES6 Classes instead of Objects
 
 >Hard Mode
-Make it so that fruit can has a swing not of negative fifty cents to positive fifty cents, but rather negative ten cents to positive ninety cents. The trade off is that they can only last for 10 intervals before 'going bad' and being deleted from the player's inventory.
+Make it so that fruit can have a swing not of negative fifty cents to positive fifty cents, but rather negative ten cents to positive ninety cents. The trade off is that they can only last for 10 intervals before 'going bad' and being deleted from the player's inventory.
 
 >Pro Mode
 Make it so the collectibles only increase in price, but can only increase in intervals between positive ten cents and thirty cents.
@@ -94,39 +94,39 @@ Make it so the collectibles only increase in price, but can only increase in int
 
 * DOM
   * Marketplace
-    - [ ] display marketplace items
-    - [ ] Price fluctuates randomly
+    - [x] display marketplace items
+    - [x] Price fluctuates randomly
   * Person
-    - [ ] display person information
-  - [ ] items buy on click
-  - [ ] items sell on click
+    - [x] display person information
+  - [x] items buy on click
+  - [x] items sell on click
   - [ ] Apply Bootstrap and CSS
 
 * Classes
-  - [ ] fruit Class
-  - [ ] collectables Class
-  - [ ] small electronics Class
-  - [ ] Person Class
-  - [ ] MarketItem Class
+  - [x] fruit Class
+  - [x] collectables Class
+  - [x] small electronics Class
+  - [x] Person Class
+  - [x] MarketItem Class
 
 * Person
-  - [ ] Function Spent Items
-  - [ ] function AVG spent
-  - [ ] function Add Item to inventory
+  - [x] Function Spent Items
+  - [x] function AVG spent
+  - [x] function Add Item to inventory
 
 * Market
-  - [ ] Time interval
-  - [ ] Random Number Generation
-  - [ ] buy item function
-  - [ ] Sell Item Function
+  - [x] Time interval
+  - [x] Random Number Generation
+  - [x] buy item function
+  - [x] Sell Item Function
 
 
 * Global Constants
-  - [ ] Price floor
-  - [ ] Price Ceiling
-  - [ ] Time interval
-  - [ ] Swing interval
-  - [ ] Total cash for the player
+  - [x] Price floor
+  - [x] Price Ceiling
+  - [x] Time interval
+  - [x] Swing interval
+  - [x] Total cash for the player
 
 * MVP - .1
   - [x] Create Array of items
