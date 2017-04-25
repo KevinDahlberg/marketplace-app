@@ -1,7 +1,53 @@
+/*
+Color Scheme
+teal - 0e7c7b
+tiffany blue - 17bebb
+aero blue - d4f4dd
+rusty red - d62246
+dark puce - 4b1d3f
+*/
+
+/*.header .row{
+  position: fixed;
+}*/
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  color: #d4f4dd;
+  background-color: #4b1d3f;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+ .playerInfo {
+  padding: 10px;
+}
+
 img {
   height: 100px;
   width: 100px;
   margin: 0 auto;
+}
+
+.personImage {
+  height: 50px;
+  width: 50px;
+}
+
+.personItem {
+  background-color: inherit;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.personItem:active {
+  transform: translateY(4px);
 }
 
 .centered {
@@ -9,14 +55,55 @@ img {
 }
 
 .itemContainer {
-  background-color: teal;
+  background-color: #d4f4dd;
   margin: 0 auto;
   padding: 5px;
   margin: 3px;
-  border-radius: 3px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #888888;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.itemContainer:hover {
+  background-color: #17bebb;
+}
+
+.itemContainer:active {
+  background-color: #0e7c7b;
+  transform: translateY(4px);
 }
 
 .playerContainer {
-  background-color: yellow;
+  width: 100%;
+  color: #d4f4dd;
+  background-color: #d62246;
   margin: 0 auto;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.market {
+  padding-top: 15px;
+  margin: 0 auto;
+}
+
+.marketItem {
+  padding: 10px;
+}
+
+.market-p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.info-p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.info-p, .item-p{
+  padding-left: 15px;
 }

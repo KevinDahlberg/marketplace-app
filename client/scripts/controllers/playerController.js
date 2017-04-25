@@ -3,4 +3,5 @@ myApp.controller('PlayerController', ['MarketService', function(MarketService){
   player.player1 = MarketService.player1;
   player.sellItem = MarketService.sellItem;
 
+console.log(player.player1);
 }]);

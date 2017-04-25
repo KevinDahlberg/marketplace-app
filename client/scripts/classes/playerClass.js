@@ -12,6 +12,7 @@ class Player {
       item = {
         name : item.name,
         quantity : [],
+        image : item.image
       };
 
       this.cart.push(item);

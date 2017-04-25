@@ -12,14 +12,13 @@ myApp.factory('MarketService', ['$interval', function($interval){
   let player1 = new Player ('Player 1', inventoryArray);
 
   function buyItem (object){
-    let { name, price } = object;
       for (item of player1.cart){
-        if (name===item.name){
-        item.quantity.push(price);
+        if (object.name===item.name){
+        item.quantity.push(object.price);
         }
         figureAvg (item.quantity);
       }
-    player1.cash = player1.cash - price;
+    player1.cash = player1.cash - object.price;
 
     }
 

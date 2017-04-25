@@ -103,3 +103,14 @@ This seems to be when each project runs out of steam - when I have to style.
 The hard part is that the styling part can be as challenging as the actual logic,
 I think it's just because the styling is my weakest area, that I'm having problems
 with it.  Much as I hate to admit it, I need styling to become one of my strengths.
+
+## 4/24/2017
+
+** did about 2 hours of coding.
+
+did some more styling.  Had a lot more success tonight than I did last night.
+It seems that I'm getting a little bit better everyday with figuring out how to
+make css do cool stuff for me.
+
+Tomorrow I need to work on finishing pro and hard mode, and dividing things up
+into classes.
