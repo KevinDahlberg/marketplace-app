@@ -37,41 +37,38 @@
 
 <body>
   <div class="container-fluid centered">
-      <div ng-controller = "PlayerController as player">
-    <div class = "row header">
-      <div class = "col-md-9">
-        <h1>Welcome {{player.player1.name}} to the Marketplace!</h1>
+    <div ng-controller = "PlayerController as player">
+      <div class = "row header">
+        <div class = "col-md-9">
+          <h1>Welcome {{player.player1.name}} to the Marketplace!</h1>
+        </div>
+        <div class = "col-md-3">
+          <h1>Cash: {{player.player1.cash | currency : "$"}}</h1>
+        </div>
       </div>
-      <div class = "col-md-3">
-      <p></p>
-      <h1>Cash: {{player.player1.cash | currency : "$"}}</p>
-    </div>
-  </div>
-    <div class="col-md-12 playerContainer">
-          <div class = "row">
-            <p class="info-p">Inventory:</p>
-            <!-- <p class="item-p">(click on items to SELL)</p> -->
-            <div ng-repeat="item in player.player1.cart">
-              <div ng-click="player.sellItem(item)">
-                <div class="personItem">
-                  <div class="col-xs-1 personItem">
-                    <img class="personImage" ng-src="{{item.image}}" alt="image of {{item.name}}">
-                  </div>
-                  <div class="col-xs-2 personItem">
-                    <p>Quantity: {{item.quantity.length}}</p>
-                    <p>Avg Price: {{item.quantity[0] | currency : "$"}}</p>
-                  </div>
+      <div class="col-md-12 playerContainer">
+        <div class = "row">
+          <p class="info-p">Inventory:</p>
+          <div ng-repeat="item in player.player1.cart">
+            <div ng-click="player.sellItem(item)">
+              <div class="personItem">
+                <div class="col-xs-1 personItem">
+                  <img class="personImage" ng-src="{{item.image}}" alt="image of {{item.name}}">
+                </div>
+                <div class="col-xs-2 personItem">
+                  <p>Quantity: {{item.quantity.length}}</p>
+                  <p>Avg Price: {{item.quantity[0] | currency : "$"}}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
     <div class="row">
       <div class="col-md-12 centered market">
         <p class="info-p">Market:</p>
-        <!-- <p class="item-p">(click on items to BUY)</p> -->
       </div>
     </div>
     <div ng-controller="MarketController as market">
@@ -91,5 +88,5 @@
       </div>
     </div>
   </div>
-  </body>
-  </html>
+</body>
+</html>

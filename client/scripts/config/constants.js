@@ -1,7 +1,7 @@
 //Game Constants
 
 //All money related items are in cents
-const PRICE_CHANGE_TIME = 15000;
+const PRICE_CHANGE_TIME = 5000;
 
 //player Constants
 const STARTING_CASH = 10000;

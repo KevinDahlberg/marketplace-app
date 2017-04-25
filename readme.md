@@ -100,7 +100,7 @@ Make it so the collectibles only increase in price, but can only increase in int
     - [x] display person information
   - [x] items buy on click
   - [x] items sell on click
-  - [ ] Apply Bootstrap and CSS
+  - [x] Apply Bootstrap and CSS
 
 * Classes
   - [x] fruit Class
@@ -153,6 +153,7 @@ Make it so the collectibles only increase in price, but can only increase in int
 
 * Version .6
   - [ ] Pro Mode
+  - [ ] Divide things as much as you can into classes (OOP)
 
 * Version 1.0
   - [ ] Deploy Online
