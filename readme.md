@@ -20,6 +20,7 @@ is in their inventory
 * Angular
 * ES6
 * Bootstrap
+* Grunt
 
 ##Goals
 * Write a full-stack version of the app using Angular, ES6 and Bootstrap
@@ -128,32 +129,35 @@ Make it so the collectibles only increase in price, but can only increase in int
   - [x] Swing interval
   - [x] Total cash for the player
 
-* MVP - .1
+---
+
+* MVP - Version 0.1
   - [x] Create Array of items
   - [x] Create player
   - [x] Display Array of items and player to DOM
 
-* Version .2
+* Version 0.2
   - [x] Create Classes
   - [x] Random Number function
   - [x] Set interval function
 
-* Version .3
+* Version 0.3
  - [x] Buy items
  - [x] Average Price
  - [x] Sell items
 
-* Version .4
+* Version 0.4
   - [x] Reduce and Add cash when buying and selling
   - [x] Apply Bootstrap and css
   - [x] Images for items
 
-* Version .5
+* Version 0.5
   - [ ] Hard Mode
 
-* Version .6
+* Version 0.6
   - [ ] Pro Mode
   - [ ] Divide things as much as you can into classes (OOP)
+  - [ ] Comment and organize Code
 
 * Version 1.0
   - [ ] Deploy Online

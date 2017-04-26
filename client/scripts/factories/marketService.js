@@ -4,8 +4,24 @@ myApp.factory('MarketService', ['$interval', function($interval){
 
   for (item of INVENTORY) {
     let price = Utilities.startingNumber(MIN_PRICE, MAX_PRICE);
-    let newItem = new MarketItem (item.name, item.image, price, item.type);
-    inventoryArray.push(newItem);
+    switch (item.type){
+      case 'smallElectronics':
+      let smallElectronics = new ElectronicItem(item.name, item.image, price, item.type);
+      inventoryArray.push(smallElectronics);
+      break;
+      case 'fruit':
+      let fruit = new FruitItem(item.name, item.image, price, item.type);
+      inventoryArray.push(fruit);
+      break;
+      case 'collectables':
+      let collectables = new CollectableItem(item.name, item.image, price, item.type);
+      inventoryArray.push(collectables);
+      break;
+      default:
+      let newItem = new MarketItem (item.name, item.image, price, item.type);
+      inventoryArray.push(newItem);
+    }
+    console.log(inventoryArray);
   }
 
 

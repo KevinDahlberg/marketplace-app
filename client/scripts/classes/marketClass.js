@@ -43,5 +43,8 @@ class ElectronicItem extends MarketItem{
 class CollectableItem extends MarketItem{
   constructor (name, image, price){
     super (name, image, price);
+    }
+    newPrice(){
+      item.price = item.price + (Utilities.randomNumber(10, 30));
+    }
   }
-}
