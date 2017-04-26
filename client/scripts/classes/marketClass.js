@@ -29,9 +29,18 @@ class MarketItem {
 }
 
 class FruitItem extends MarketItem{
-  constructor (name, image, price){
+  constructor (name, image, price, age){
     super (name, image, price);
+    this.age = 10;
   }
+  newPrice (){
+   let posNeg = Math.random()*2;
+   if (posNeg > 1) {
+     item.price = item.price + (Utilities.randomNumber(MIN_PRICE_SWING, 90));
+   } else if (posNeg < 1) {
+     item.price = item.price - (Utilities.randomNumber(MIN_PRICE_SWING, 10));
+   }
+ }
 }
 
 class ElectronicItem extends MarketItem{

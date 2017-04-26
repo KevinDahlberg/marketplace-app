@@ -114,3 +114,9 @@ make css do cool stuff for me.
 
 Tomorrow I need to work on finishing pro and hard mode, and dividing things up
 into classes.
+
+## 4/25/2017
+
+** about 2 hours of coding.
+moved all of the player related tasks (buy, sell, and average), into the Player Class.
+Also took care of pro mode and worked on hard mode.

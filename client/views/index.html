@@ -50,7 +50,7 @@
         <div class = "row">
           <p class="info-p">Inventory:</p>
           <div ng-repeat="item in player.player1.cart">
-            <div ng-click="player.sellItem(item)">
+            <div ng-click="player.player1.sellItem(item)">
               <div class="personItem">
                 <div class="col-xs-1 personItem">
                   <img class="personImage" ng-src="{{item.image}}" alt="image of {{item.name}}">
@@ -77,7 +77,7 @@
           <div ng-repeat="item in market.inventoryArray">
             <div class="col-sm-2 centered">
               <div class = "itemContainer centered">
-                <div class="marketItem" ng-click="market.buyItem(item)">
+                <div class="marketItem" ng-click="market.player1.buyItem(item)">
                   <img class="center-block" ng-src="{{item.image}}" alt="image of {{item.name}}">
                   <p class="market-p">Price: {{item.price | currency : "$"}}</p>
                 </div>

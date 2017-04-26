@@ -4,6 +4,7 @@ myApp.controller('MarketController', ['MarketService', function(MarketService){
 
   market.inventoryArray = MarketService.inventoryArray;
   market.buyItem = MarketService.buyItem;
+  market.player1 = MarketService.player1;
 
   console.log(this.inventoryArray);
 }]);

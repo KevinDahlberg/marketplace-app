@@ -21,52 +21,10 @@ myApp.factory('MarketService', ['$interval', function($interval){
       let newItem = new MarketItem (item.name, item.image, price, item.type);
       inventoryArray.push(newItem);
     }
-    console.log(inventoryArray);
   }
 
 
   let player1 = new Player ('Player 1', inventoryArray);
-
-  function buyItem (object){
-      for (item of player1.cart){
-        if (object.name===item.name){
-        item.quantity.push(object.price);
-        }
-        figureAvg (item.quantity);
-      }
-    player1.cash = player1.cash - object.price;
-
-    }
-
-  function sellItem (object, array = inventoryArray){
-    let { name , quantity } = object;
-    let price;
-    if (quantity.length===0){
-      console.log('no value');
-    } else {
-      for (item of player1.cart){
-        if (name===item.name){
-          item.quantity.pop();
-        }
-      }
-      for (item of array){
-        if (name === item.name){
-          price = item.price;
-        }
-      }
-    player1.cash = player1.cash + price;
-  }
-}
-
-    function figureAvg (array) {
-      let num = array.length;
-      let num2 = 0;
-      for (let item of array){
-        num2 = parseFloat(item) + num2;
-      }
-      let average = num2/num;
-      array.fill(average);
-    }
 
   //applies the setInterval function in angular.  cycles through the inventoryArray and
   //generates a new random number based on the swing.  if the number goes above or below
@@ -84,7 +42,5 @@ myApp.factory('MarketService', ['$interval', function($interval){
     updateNumber,
     inventoryArray,
     player1,
-    buyItem,
-    sellItem
   }
 }]);
