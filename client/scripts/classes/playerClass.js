@@ -64,5 +64,4 @@ class Player {
     array.fill(average);
   }
 
-
 }

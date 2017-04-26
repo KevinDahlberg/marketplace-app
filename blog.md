@@ -120,3 +120,8 @@ into classes.
 ** about 2 hours of coding.
 moved all of the player related tasks (buy, sell, and average), into the Player Class.
 Also took care of pro mode and worked on hard mode.
+hard mode finished.  I might have been able to find a more elegant way to get it figured out,
+but the important thing is that it's figured out.
+
+Project is basically finished.  I could adjust a few things to change the gameplay, but as far as
+I'm concerned it's basically done.  Tomorrow I'll comment out the code and deploy it on my website.

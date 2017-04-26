@@ -29,8 +29,8 @@ class MarketItem {
 }
 
 class FruitItem extends MarketItem{
-  constructor (name, image, price, age){
-    super (name, image, price);
+  constructor (name, image, price, type, age){
+    super (name, image, price, type);
     this.age = 10;
   }
   newPrice (){
@@ -44,14 +44,14 @@ class FruitItem extends MarketItem{
 }
 
 class ElectronicItem extends MarketItem{
-  constructor (name, image, price){
-    super (name, image, price);
+  constructor (name, image, price, type){
+    super (name, image, price, type);
   }
 }
 
 class CollectableItem extends MarketItem{
-  constructor (name, image, price){
-    super (name, image, price);
+  constructor (name, image, price, type){
+    super (name, image, price, type);
     }
     newPrice(){
       item.price = item.price + (Utilities.randomNumber(10, 30));

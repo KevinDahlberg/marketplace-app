@@ -152,11 +152,11 @@ Make it so the collectibles only increase in price, but can only increase in int
   - [x] Images for items
 
 * Version 0.5
-  - [ ] Hard Mode
+  - [x] Hard Mode
 
 * Version 0.6
-  - [ ] Pro Mode
-  - [ ] Divide things as much as you can into classes (OOP)
+  - [x] Pro Mode
+  - [x] Divide things as much as you can into classes (OOP)
   - [ ] Comment and organize Code
 
 * Version 1.0

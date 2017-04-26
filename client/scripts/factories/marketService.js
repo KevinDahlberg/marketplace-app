@@ -35,6 +35,17 @@ myApp.factory('MarketService', ['$interval', function($interval){
       //makes sure the price does not go above or below the max and min prices
       item.priceConstraint();
     }
+    for (item of player1.cart){
+      if (item.quantity.length > 0){
+        if (item.age){
+          item.age--;
+          if (item.age === 0){
+            item.quantity.pop();
+          }
+      }
+    }
+  }
+
   }, PRICE_CHANGE_TIME);
 
   console.log(player1);
