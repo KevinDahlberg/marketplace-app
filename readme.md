@@ -1,13 +1,24 @@
 # Marketplace App
+* application can be found at: [www.marketplace-app.kevindahlberg.com]
+
+---
+
+![Image of Markteplace App](https://github.com/KevinDahlberg/marketplace-app/marketplace-app.png)
+
+---
 
 * Setup Instructions:
   * run npm install to install dependencies
   * npm start to spin up server
   * access app on localhost:4000
 
+---
+
 ## Project Overview
 The original project was a group assignment during my 7th week of in-class work
 at Prime Digital Academy.  This is my personal attempt at the project.
+
+---
 
 ### Summary
 The project involves creating a Marketplace Game.  The game has multiple market
@@ -16,11 +27,15 @@ clicks on each item when they want to "buy" them.  When an item is purchased, it
 appears in the player's inventory.  The player can then sell the product after it
 is in their inventory
 
+---
+
 ### Technologies Used
 * Angular
 * ES6
 * Bootstrap
 * Grunt
+
+---
 
 ##Goals
 * Write a full-stack version of the app using Angular, ES6 and Bootstrap
@@ -160,4 +175,4 @@ Make it so the collectibles only increase in price, but can only increase in int
   - [ ] Comment and organize Code
 
 * Version 1.0
-  - [ ] Deploy Online
+  - [x] Deploy Online

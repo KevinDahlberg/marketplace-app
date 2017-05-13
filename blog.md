@@ -54,7 +54,7 @@ stuff to think about:
 - I need to get the price on each item to swing on the interval.
 - I need to create all of my new item objects in the factory and push them to the array.
 
-** Break for Supper at 10:55 **
+** Break for Supper at 10:55 ** 2:55
 
 ** 11:58 back at it **
 
@@ -79,7 +79,7 @@ gets an item of that price added to it.
 
 changed "quantity" so that it only counts the length of the array, not the actual items in it on the DOM
 
-** 2:11 taking a break **
+** 2:11 taking a break ** 2:13 / 5:08
 
 ** 2:30 back at it **
 
@@ -89,11 +89,11 @@ couldn't figure that out yet.  I did get the averageing and the selling function
 
 able to add and subtract from the total cash
 
-** 3:20 done for the night **
+** 3:20 done for the night ** :50 / 5:58
 
 ## 4/23/2017
 
-** coded for about an hour.
+** coded for about an hour. 6:58
 
 added images, did some styling and fixed the bug that let you sell an item even
 if there wasn't any quantity of that item.
@@ -106,7 +106,7 @@ with it.  Much as I hate to admit it, I need styling to become one of my strengt
 
 ## 4/24/2017
 
-** did about 2 hours of coding.
+** did about 2 hours of coding. 8:58
 
 did some more styling.  Had a lot more success tonight than I did last night.
 It seems that I'm getting a little bit better everyday with figuring out how to
@@ -117,7 +117,7 @@ into classes.
 
 ## 4/25/2017
 
-** about 2 hours of coding.
+** about 2 hours of coding. 10:58
 moved all of the player related tasks (buy, sell, and average), into the Player Class.
 Also took care of pro mode and worked on hard mode.
 hard mode finished.  I might have been able to find a more elegant way to get it figured out,

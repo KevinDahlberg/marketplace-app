@@ -40,7 +40,7 @@ myApp.factory('MarketService', ['$interval', function($interval){
         if (item.age){
           item.age--;
           if (item.age === 0){
-            item.quantity.pop();
+            item.quantity = 0;
           }
       }
     }
