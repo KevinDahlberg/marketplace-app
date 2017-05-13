@@ -3,7 +3,7 @@
 
 ---
 
-![Image of Markteplace App](https://github.com/KevinDahlberg/marketplace-app/marketplace-app.png)
+![Image of Markteplace App](https://github.com/KevinDahlberg/marketplace-app/blob/master/marketplace-app.png)
 
 ---
 
