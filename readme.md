@@ -1,5 +1,5 @@
 # Marketplace App
-* application can be found at: [www.marketplace-app.kevindahlberg.com]
+* application can be found at: <www.marketplace-app.kevindahlberg.com>
 
 ---
 
